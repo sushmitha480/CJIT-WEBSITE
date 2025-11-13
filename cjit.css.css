@@ -1,0 +1,164 @@
+body {
+      
+      /* background-image: url('campus.jpg'); */
+      
+     
+      background-size: cover;       
+      background-repeat: no-repeat; 
+      background-position: center; 
+      height: 100vh;               
+      margin: 0;
+    }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body {
+  background-color: #f5f7fa;
+  background-image:url "college.jpg";
+  color: #222;
+  line-height: 1.6;
+}
+
+
+.header {
+  background-color: #002855; 
+  color: white;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4px solid #f1c40f;
+}
+
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.college-info h1 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.college-info h2 {
+  font-size: 1.2rem;
+  color: #f1c40f;
+  margin-top: 5px;
+}
+
+.college-info p {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+
+.menu {
+  background-color: #004aad;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  border-bottom: 3px solid #f1c40f;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.menu a:hover {
+  color: #f1c40f;
+  transform: scale(1.1);
+}
+
+.content-area {
+  padding: 30px;
+  text-align: center;
+  background-color: white;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.content-area h2 {
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+.content-area p {
+  color: #333;
+  font-size: 1rem;
+}
+
+
+.college-image {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.content-area ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.content-area li {
+  background-color: #e6f0ff;
+  background-image: url(campus.jpg);
+  margin: 10px auto;
+  padding: 10px 15px;
+  
+  width: 80%;
+  max-width: 600px;
+  color: #002855;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.content-area li:hover {
+  background-color: #cce0ff;
+}
+
+@media (max-width: 768px) {
+  .logo-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .menu a {
+    margin: 10px;
+  }
+
+  .content-area {
+    width: 95%;
+    padding: 20px;
+  }
+}

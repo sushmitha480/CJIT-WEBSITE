@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CJIT Header</title>
+  <link rel="stylesheet" href="cjit.css">
+</head>
+<body>
+
+  
+  <header class="header">
+    <div class="logo-section">
+      <img src="logo.png" alt="CJIT Logo" class="logo">
+      <div class="college-info">
+        <h1>CHRISTU JYOTHI</h1>
+        <h2>INSTITUTE OF TECHNOLOGY & SCIENCE</h2>
+        <p>Affiliated to JNTUH | Jangaon, Telangana 506167</p>
+      </div>
+    </div>
+  </header>
+
+  
+  <nav class="menu">
+    <a href="#" id="home">Home</a>
+    <a href="#" id="about">About</a>
+    <a href="#" id="departments">Departments</a>
+    <a href="#" id="staff">Staff</a>
+    <a href="#" id="placements">Placements</a>
+  </nav>
+
+  
+  <div id="content" class="content-area">
+    <h2>Welcome to CJIT!</h2>
+          <img src="campus.jpg" alt="College Image" class="college-image">
+  </div>
+
+  <script>
+    
+    
+  document.getElementById("home").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("content").innerHTML = `
+    <h2>Home</h2>
+    <div class="college logo-section">
+      <img src="college.jpg" alt="College Image" class="college-image">
+      </div>
+    `;
+  });
+
+
+
+    document.getElementById("about").addEventListener("click", function(event) {
+      event.preventDefault();
+      document.getElementById("content").innerHTML = `
+        <h2>About Us</h2>
+        <p>Christu Jyothi Institute of Technology & Science is committed to excellence in education and innovation.</p>
+      `;
+    });
+
+    document.getElementById("departments").addEventListener("click", function(event) {
+      event.preventDefault();
+      document.getElementById("content").innerHTML = `
+        <h2>Departments</h2>
+        <ul>
+          <li>Civil Engineering</li>
+          <li>Computer Science & Engineering</li>
+          <li>Electrical & Electronics Engineering</li>
+          <li>Electronics & Communication Engineering</li>
+          <li>Mechanical Engineering</li>
+          <li>Humanities & Sciences</li>
+        </ul>
+      `;
+    });
+
+    document.getElementById("staff").addEventListener("click", function(event) {
+      event.preventDefault();
+      document.getElementById("content").innerHTML = `
+        <h2>Staff</h2>
+        <ul>
+          <li>Teaching staff</li>
+          <li>Non-teaching staff</li>
+          
+        </ul>
+      `;
+    });
+
+    document.getElementById("placements").addEventListener("click", function(event) {
+      event.preventDefault();
+      document.getElementById("content").innerHTML = `
+        <h2>Placements</h2>
+        <p>Our students have been successfully placed in reputed organizations across India.</p>
+      `;
+    });
+  </script>
+
+</body>
+</html>
